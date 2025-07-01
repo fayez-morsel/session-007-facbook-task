@@ -6,15 +6,20 @@
     --text--color: #1c1e21;
     --font-large: 60px;
     --font-medium: 27px;
+    --border: #dddfe2;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1150px) {
     :root{
         --font-medium: 24px;
 
     }
    #div1-p{
     font-size: var(--font-medium);
+    width: 380px;
+   }
+
+   #div1{
     width: 380px;
    }
 }
@@ -39,32 +44,117 @@ body{
     width: 1000px;
     height: 540px;
     background-color:var(--bg-color);
-    display: flex;
+    display:flex;
+    gap: 10%;
 }
 
 .div2{
     width: 50%;
-    min-width: 500px;
-    background-color: rgba(238, 130, 238, 0.493);
+    min-width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
 }
 
 .div1{
-    width: 50%;
     height: 50%;
-    min-width: 500px;
+    min-width: 480px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    width: auto;
+    margin-right: min(10px,5em);
 }
 
 .div1 h1{
     color: var(--text-color);
     font-size: var(--font-large);
     padding-bottom: 5px;
+    width: 280px;
 }
 
 .div1-p{
     width: 480px;
     font-size: var(--font-medium);
     color: var(--text--color);
+}
+
+.div2-1{
+    width: 396px;
+    height: 360px;
+    padding: 15px;
+    background-color: var(--bg-form);
+    border-radius: 10px;
+    box-shadow: rgb(209, 209, 209) 0px 0px 5px;
+    border: none;
+}
+
+#form{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px var(--border);
+   
+}
+
+#email,#password{
+    font-size: 17px;
+    padding: 14px 16px;
+    width: 100%;
+    border-radius: 8px;
+    border: solid 1px var(--border);
+    height: 48px;
+    
+}
+
+#login{
+    font-size: 17px;
+    padding: 14px 16px;
+    width: 100%;
+    background-color: var(--text-color);
+    border: none;
+    border-radius: 8px;
+    height: 48px;
+    color: var(--bg-form);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#form>a{
+    text-decoration: none;
+    color: var(--text-color);
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+#create{
+    width: 220px;
+    height: 48px;
+    background-color: var(--color-button);
+    color: var(--bg-form);
+    margin: 35px 70px 15px 70px ;
+    border: none;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.div2-2{
+    width: 396px;
+    text-align: center;
+}
+
+.div2-2 p{
+    font-size: 14px;
+}
+
+.div2-2 span{
+    font-weight: bold;
+    margin-right: 5px;
 }
