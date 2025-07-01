@@ -22,11 +22,12 @@
 
 @media(max-width:900px){
     .container{
+        width: 396px;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 20px;
-        
+
     }
 
     #div1{
@@ -141,6 +142,11 @@ body{
     color: var(--bg-form);
     font-size: 20px;
     font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#login:hover{
+    background-color: #0867ffdc;
 }
 
 #form>a{
@@ -163,6 +169,7 @@ body{
     border-radius: 5px;
     font-weight: bolder;
     font-size: 18px;
+    
 }
 
 .div2-2{
