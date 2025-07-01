@@ -9,7 +9,7 @@
     --border: #dddfe2;
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1070px) {
     :root{
         --font-medium: 24px;
 
@@ -18,10 +18,29 @@
     font-size: var(--font-medium);
     width: 380px;
    }
+}
 
-   #div1{
-    width: 380px;
-   }
+@media(max-width:900px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        
+    }
+
+    #div1{
+        width: 396px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+    }
+
+    #div1-p{
+        text-align: center;
+    }
 }
 
 *{
@@ -45,26 +64,27 @@ body{
     height: 540px;
     background-color:var(--bg-color);
     display:flex;
-    gap: 10%;
+    margin: 0 40px;
 }
 
 .div2{
     width: 50%;
-    min-width: 480px;
+    min-width: 396px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     justify-content: center;
+    align-items: flex-end;
 }
 
 .div1{
     height: 50%;
-    min-width: 480px;
+    min-width: 380px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     width: auto;
-    margin-right: min(10px,5em);
+    margin-right: auto;
 }
 
 .div1 h1{
@@ -94,7 +114,7 @@ body{
     width: auto;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     padding-bottom: 20px;
     border-bottom: solid 1px var(--border);
    
@@ -104,7 +124,7 @@ body{
     font-size: 17px;
     padding: 14px 16px;
     width: 100%;
-    border-radius: 8px;
+    border-radius: 5px;
     border: solid 1px var(--border);
     height: 48px;
     
@@ -116,7 +136,7 @@ body{
     width: 100%;
     background-color: var(--text-color);
     border: none;
-    border-radius: 8px;
+    border-radius: 5px;
     height: 48px;
     color: var(--bg-form);
     font-size: 20px;
@@ -138,9 +158,9 @@ body{
     height: 48px;
     background-color: var(--color-button);
     color: var(--bg-form);
-    margin: 35px 70px 15px 70px ;
+    margin: 30px 70px 15px 70px ;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     font-weight: bolder;
     font-size: 18px;
 }
