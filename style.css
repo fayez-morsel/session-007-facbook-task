@@ -156,7 +156,12 @@ body{
     font-size: 15px;
     font-weight: bold;
     padding-top: 10px;
+    transition: all 0.3s ease-in-out;
 
+}
+
+#form>a:hover{
+    color: #0867ffc0;
 }
 
 #create{
