@@ -7,6 +7,7 @@
     --font-large: 60px;
     --font-medium: 27px;
     --border: #dddfe2;
+    --font-small: 18px;
 }
 
 @media (max-width: 1070px) {
